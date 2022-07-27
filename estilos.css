@@ -28,21 +28,22 @@ li{
     font-size: 45px;
 }
 
-
 .button-info{
     font-size: 1.5em;
     font-weight: lighter;
-    padding: 10px 20px;
+    padding: 7px 20px;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, .5);
+    border: 1px solid white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
     color: white;
-    background-color: darkslategray;
+    background-color: black;
     cursor: pointer;
 }
 
 .button-info:hover{
-    background-color: rgb(67, 126, 126);
+    background-color: rgb(32, 29, 29);
+    border: 1px solid white;
+    color: white;
 }
 
 /*Hero*/
@@ -131,7 +132,14 @@ header{
 .menu-navegacion a{
     color: black;
     text-decoration: none;
+    text-transform: uppercase;
 }
+
+.menu-navegacion a:hover{
+    color: black;
+    border-bottom: 1px solid black;
+}
+
 
 .titulo{
     font-size: 50px;
@@ -156,24 +164,23 @@ header{
 
 .contenedor-white{
     border-radius: 8px;
-    width: 365px;
-    height: 440px;
+    width: 375px;
+    height: 470px;
     text-align: center;
     line-height: 30px;
-    /*box-shadow: 0 0 6px rgba(0, 0, 0, .5);*/
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
     background: white;
-    /*border: 2px solid black;*/
+    padding-top: 10px;
+    border: 1px solid black;
 }
 
 .contenedor-black{
     border-radius: 8px;
     width: 590px;
-    height: 360px;
+    height: 380px;
     text-align: center;
-    /*box-shadow: 0 0 8px rgba(0, 0, 0, .5);*/
     margin-bottom: 20px;
     background: white;
-   /* border:2px solid black;*/
 }
 
 .contenedor-black .home-titulo{
@@ -182,7 +189,7 @@ header{
 
 .video{
     border-radius: 5px;
-    border: 3px solid black;
+    border: 4px solid black;
     box-shadow: 0 0 8px rgba(0, 0, 0, .5);
     margin-top: 25px;
 }
@@ -225,7 +232,7 @@ header{
     font-weight: bold;
     padding: 6px 16px;
     border-radius: 10px;
-    border: 3px solid rgb(179, 173, 230);
+    border: 3px solid rgb(46, 85, 85);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.541);
     color: white;
     background-color: black;
@@ -239,6 +246,10 @@ header{
 }
 
 /*Expertos*/
+
+.contenedor{
+    margin-top: 55px;
+}
 
 .experts{
     display: flex;
@@ -254,7 +265,8 @@ header{
 }
 
 .cont-expert img{
-    width: 80%;
+    width: 80px;
+    height: 80px;
     display: block;
     margin: 0 auto;
 }
@@ -303,6 +315,58 @@ header{
 
 /*Sobre nosotros*/
 
+.nosotros-contenedor{
+    width: 95%;
+    margin: 40px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "nosotros-subtitulo nosotros-img"
+                            "nosotros-texto nosotros-img"
+                            "nosotros-media nosotros-img";
+}
+
+.nosotros-subtitulo{
+    grid-area: nosotros-subtitulo;
+}
+
+.nosotros-contenedor .nosotros-texto{
+    grid-area: nosotros-texto;
+}
+
+.nosotros-contenedor .nosotros-media{
+    grid-area: nosotros-media;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nosotros-contenedor .nosotros-img{
+    grid-area: nosotros-img;
+    max-height: 100%;
+    margin-top: 40px;
+}
+
+.nosotros-img img{
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0 rgba(168, 161, 161, 0.5);
+}
+
+.nosotros-media .social-media-icon{
+    border: 1px solid black;
+    color: black;
+}
+
+.nosotros-media .social-media-icon:hover{
+    background: white;
+    color: rgb(30, 58, 58);
+    border: 1px solid rgb(30, 58, 58);
+    transform: scale(1.2);
+}
+
+
+/*
 .contenedor-nosotros{
     display: flex;
     justify-content: space-evenly;
@@ -340,7 +404,7 @@ header{
     line-height: 30px;
     margin-right: 5px;
 }
-
+*/
 /*Actividades - servicios*/
 
 h3{
