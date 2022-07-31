@@ -67,7 +67,7 @@ li{
     max-width: 1200px;
     overflow: hidden;
     margin: auto; 
-    padding: 60px 0;
+    /*padding: 60px 0;*/
 }
 
 header{
@@ -157,21 +157,23 @@ header{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    margin-top: 65px;
-    margin-bottom: 65px;
+    padding-top: 65px;
+   /* margin-top: 65px;
+    margin-bottom: 65px;*/
     align-items: center;
+    background-color: #f2f2f2;
 }
 
 .contenedor-white{
     border-radius: 8px;
-    width: 375px;
-    height: 470px;
+    width: 400px;
+    height: 525px;
     text-align: center;
     line-height: 30px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 12px rgba(70, 69, 69, 0.5);
     background: white;
-    padding-top: 10px;
-    border: 1px solid black;
+    padding-top: 15px;
+    /*border: 2px solid black;*/
 }
 
 .contenedor-black{
@@ -179,8 +181,8 @@ header{
     width: 590px;
     height: 380px;
     text-align: center;
-    margin-bottom: 20px;
-    background: white;
+    /*margin-bottom: 20px;*/
+    background: #f2f2f2;
 }
 
 .contenedor-black .home-titulo{
@@ -189,8 +191,8 @@ header{
 
 .video{
     border-radius: 5px;
-    border: 4px solid black;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+   /* border: 4px solid black;*/
+    box-shadow: 0 0 12px rgba(70, 69, 69, 0.5);
     margin-top: 25px;
 }
 
@@ -214,7 +216,7 @@ header{
     font-weight: bold;
     padding: 6px 16px;
     border-radius: 10px;
-    border: 3px solid yellow;
+    border: 3px solid darkslategray;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
     color: white;
     background-color: black;
@@ -232,7 +234,7 @@ header{
     font-weight: bold;
     padding: 6px 16px;
     border-radius: 10px;
-    border: 3px solid rgb(46, 85, 85);
+    border: 3px solid darkslategray;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.541);
     color: white;
     background-color: black;
@@ -245,10 +247,25 @@ header{
     color: black;
 }
 
+.number{
+    display: inline-block;
+    background-image: linear-gradient(to top, black 0%, darkslategray);
+    width: 16px;
+    height: 16px;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 50px; 
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+
 /*Expertos*/
 
 .contenedor{
-    margin-top: 55px;
+    margin-top: 65px;
+    padding-bottom: 65px;
 }
 
 .experts{
@@ -262,13 +279,18 @@ header{
     width: 25%;
     text-align: center;
     margin-bottom: 15px;
+    box-shadow: 0 0 12px rgba(70, 69, 69, 0.5);
+    width: 220px;
+    height: 200px;
+    background: white;
 }
 
 .cont-expert img{
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
     display: block;
     margin: 0 auto;
+    margin-top: 60px;
 }
 
 .n-experts{
@@ -319,6 +341,7 @@ header{
     width: 95%;
     margin: 40px auto;
     display: grid;
+    flex-wrap: wrap;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -359,52 +382,11 @@ header{
 }
 
 .nosotros-media .social-media-icon:hover{
-    background: white;
-    color: rgb(30, 58, 58);
-    border: 1px solid rgb(30, 58, 58);
-    transform: scale(1.2);
+background: black;
+color: darkslategray;
+border: 2px solid darkslategray;
 }
 
-
-/*
-.contenedor-nosotros{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.contenedor-nosotros img{
-    width: 40%;
-    border-radius: 5px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-}
-
-.checklist-nosotros{
-    width: 45%;
-}
-
-.our{
-    margin-bottom: 20px;
-}
-
-.n-our{
-    margin-bottom: 7px;
-}
-
-.number{
-    display: inline-block;
-    background-image: linear-gradient(to top, black 0%, rgb(167, 161, 161) 100%);
-    width: 30px;
-    height: 30px;
-    color: white;
-    text-align: center;
-    border-radius: 50px;
-    font-weight: 50px; 
-    line-height: 30px;
-    margin-right: 5px;
-}
-*/
 /*Actividades - servicios*/
 
 h3{
@@ -737,8 +719,45 @@ footer{
     margin-bottom: 60px;
 }
 
-/*Footer: contacto*/
+/*Footer: links y contacto*/
 
+.links-contacto{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 35vh;
+    padding-bottom: 30px;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+}
+
+.links a:hover{
+    color: darkslategray;
+}
+
+.footer-contact a{
+    padding-bottom: 47px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-contact a:hover{
+    color: darkslategray;
+}
+
+.links-contacto .number{
+    display: inline-block;
+    background-image:linear-gradient(to top, black 0%, darkslategray) ;
+    width: 14px;
+    height: 14px;
+}
+
+/*Footer: contacto*/
+/*
 .contact{
     background: black;
     color: white;
@@ -787,7 +806,7 @@ input[type="submit"]:hover{
     color: darkslategray;
     background: white;
 }
-
+*/
 
 /*Medias seccion actividades y servicios*/
 

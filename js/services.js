@@ -3,7 +3,7 @@ const buttonInfo = [...document.querySelectorAll('.button-info')];
 
 const arrayContent = [
     {
-        text:'Con más de 10 años de trayectoria, este Grupo ha realizado presentaciones en diferentes festivales de danza y gastronomía en distintas localidades cordobesas como Oktoberfest de Villa General Belgrano y la Fiesta de Colectividades de Alta Gracia, se ha presentado en diversas ciudades del interior del país como la Fiesta Nacional del Inmigrante en Oberá en la provincia de Misiones, La Noche de las Colectividades en Rosario, Santa Fe y la Fiesta Provincial del Inmigrante en Concordia, Entre Ríos; como así también a llevado su espectáculo al exterior del país participando del reconocido festival PolFest en Guaraní das Missões, Brasil.',
+        text:'Con más de 10 años de trayectoria, este Grupo ha realizado presentaciones en diferentes festivales de danza y gastronomía en distintas localidades cordobesas como Oktoberfest de Villa General Belgrano y la Fiesta de Colectividades de Alta Gracia, se ha presentado en diversas ciudades del interior del país como la Fiesta Nacional del Inmigrante en Oberá en la provincia de Misiones, La Noche de las Colectividades en Rosario, Santa Fe y la Fiesta Provincial del Inmigrante en Concordia, Entre Ríos; como así también a llevado su espectáculo al exterior del país participando del reconocido festival PolFest en Guaraní das Missões, Brasil.Este grupo está dirigido por Victor Eduardo Bustos, Coreógrafo doblemente titulado en el Centro de Formación Cultural de Katowice (19..) y por la Universidad Politécnica de Rzeszów (2019). Varios integrantes de Nowa Polonia se han capacitado en el “Curso de Estudio Coreográfico Polaco” organizado por la Universidad Politécnica de Rzeszów y Stowarzyszenie Wspólnota Polska, obteniendo el título de Coreógrafos dos de ellos: Julia Florentyna Bustos y Leandro Agustín Acosta.',
         confirmButton:'Ok',
         imageUrl: 'media/card1.jpg'
     },
@@ -13,7 +13,7 @@ const arrayContent = [
         imageUrl: 'media/card2.jpeg'
     },
     {
-        text:'Si tenés un antepasado nacido en Polonia, podés obtener la Ciudadanía Polaca con la cual podrás acceder luego al Pasaporte Polaco. Este último te otorga derechos y facilidades de estudios, trabajo o residencia en cualquier país de la Unión Europea, de la que Polonia es parte desde 2004.',
+        text:'Además, si necesitás realizar traducciones del español al idioma polaco o del polaco al español de documentaciones por estudio, trabajo, actividades comerciales o diversa índole, tenemos amplios antecedentes en estos campo. Ofrecemos: Servicio de traducciones del idioma polaco al español y viceversa, de documentación de diversa índole.Tramitación de Ciudadanías con asesoramiento y seguimiento de cada caso.',
         confirmButton:'Ok',
         imageUrl: 'media/card3.jpg'
     },

@@ -1,14 +1,3 @@
-/*
-    foto de albúm
-    const fotoDeAlbum = {
-        img: (url de imagen),
-        place: sala de conferencias,
-        date: 1980-06-02,
-        description:"Conferencia Episcopal...",
-        category:"Casamientos"
-    }
-
-*/
 
 export const arrayGallery = [
     {
