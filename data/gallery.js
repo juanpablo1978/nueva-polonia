@@ -86,45 +86,45 @@ export const arrayGallery = [
     },
     {
         id:13,
-        img:"https://pbs.twimg.com/media/EPPTZxVX0AAx8ie?format=jpg&name=small",
+        img:"https://pbs.twimg.com/media/FayMX_UWAAIKffQ?format=jpg&name=large",
         description:"Fiesta de máscaras",
         date:"2022-01-13",
-        category:"cultura"
+        category:"colonia polaca"
     },
     {
         id:14,
-        img:"https://pbs.twimg.com/media/E0ZxbtIWEAUXzmi?format=jpg&name=4096x4096",
+        img:"https://pbs.twimg.com/media/FhTsUjvXEAA25QN?format=jpg&name=large",
         description:"Fiesta de máscaras",
         date:"2022-01-13",
-        category:"cultura"
+        category:"colonia polaca"
     },
     {
         id:15,
-        img:"https://pbs.twimg.com/media/EbQmhuwWoAItuPB?format=jpg&name=small",
+        img:"https://pbs.twimg.com/media/Fc4eSueWYAA6jAe?format=jpg&name=large",
         description:"Fiesta de máscaras",
         date:"2022-01-13",
-        category:"cultura"
+        category:"colonia polaca"
     },
     {
         id:16,
-        img:"https://pbs.twimg.com/media/FN8MqwXWYAELm_Y?format=jpg&name=large",
+        img:"https://pbs.twimg.com/media/FhPVwZDWYAECBEp?format=jpg&name=large",
         description:"Fiesta de máscaras",
         date:"2022-01-13",
-        category:"cultura"
+        category:"colonia polaca"
     },
     {
         id:17,
-        img:"https://pbs.twimg.com/media/FEXSQyIXEAIBfHT?format=jpg&name=medium ",
+        img:"https://pbs.twimg.com/media/Fj5ZHbLXgAI2QWa?format=jpg&name=large",
         description:"Fiesta de máscaras",
         date:"2022-01-13",
-        category:"cultura"
+        category:"colonia polaca"
     },
     {
         id:18,
-        img:"https://pbs.twimg.com/media/DtRCwe0WsAArdZd?format=jpg&name=small",
+        img:"https://pbs.twimg.com/media/FqF2_mIWcAAEgTI?format=jpg&name=small",
         description:"Fiesta de máscaras",
         date:"2022-01-13",
-        category:"cultura"
+        category:"colonia polaca"
     }
 ]
 

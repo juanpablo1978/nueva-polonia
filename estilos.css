@@ -29,25 +29,24 @@ li{
 }
 
 .button-info{
-    font-size: 1.5em;
-    font-weight: lighter;
-    padding: 7px 20px;
+    font-size: 1.3em;
+    padding: 3px 35px;
     border-radius: 10px;
-    border: 1px solid white;
+    border: 2px solid white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
     color: white;
-    background-color: black;
+    background-color: transparent;
     cursor: pointer;
 }
 
 .button-info:hover{
-    background-color: rgb(32, 29, 29);
+    background-color: black;
     border: 1px solid white;
     color: white;
 }
 
 /*Hero*/
-/*
+
 .text{
     animation-duration: 5s;
     animation-name: texto;
@@ -61,13 +60,12 @@ li{
         opacity: 1;
     }
 }
-*/
+
 .contenedor{
     width: 90%;
     max-width: 1200px;
     overflow: hidden;
     margin: auto; 
-    /*padding: 60px 0;*/
 }
 
 header{
@@ -81,7 +79,7 @@ header{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("media/hero.jpg");
+    ,url("https://pbs.twimg.com/media/EVXZcqlXsAAuFfK?format=jpg&name=4096x4096");
 }
 
 .head{
@@ -158,8 +156,6 @@ header{
     flex-flow: row wrap;
     justify-content: space-evenly;
     padding-top: 65px;
-   /* margin-top: 65px;
-    margin-bottom: 65px;*/
     align-items: center;
     background-color: #f2f2f2;
 }
@@ -167,7 +163,7 @@ header{
 .contenedor-white{
     border-radius: 8px;
     width: 400px;
-    height: 525px;
+    height: 580px;
     text-align: center;
     line-height: 30px;
     box-shadow: 0 0 12px rgba(70, 69, 69, 0.5);
@@ -181,7 +177,6 @@ header{
     width: 590px;
     height: 380px;
     text-align: center;
-    /*margin-bottom: 20px;*/
     background: #f2f2f2;
 }
 
@@ -191,7 +186,7 @@ header{
 
 .video{
     border-radius: 5px;
-   /* border: 4px solid black;*/
+    border: 4px solid black;
     box-shadow: 0 0 12px rgba(70, 69, 69, 0.5);
     margin-top: 25px;
 }
@@ -280,23 +275,23 @@ header{
     text-align: center;
     margin-bottom: 15px;
     box-shadow: 0 0 12px rgba(70, 69, 69, 0.5);
-    width: 220px;
-    height: 200px;
+    width: 210px;
+    height: 190px;
     background: white;
+}
+
+.cont-expert h4{
+    font-weight: bold;
 }
 
 .cont-expert img{
     width: 40px;
     height: 40px;
     display: block;
-    margin: 0 auto;
-    margin-top: 60px;
-}
-
-.n-experts{
-    display: inline-block;
-    margin-top: 20px;
-    width: 100%;
+    margin: 60 auto;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    margin-left: 85px;
 }
 
 /*Agenda y efemerides*/
@@ -337,54 +332,37 @@ header{
 
 /*Sobre nosotros*/
 
+.subtitulo-nosotros{
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    margin: 30px 0px 30px 0px;
+    font-size: 40px;
+}
+
 .nosotros-contenedor{
-    width: 95%;
-    margin: 40px auto;
-    display: grid;
-    flex-wrap: wrap;
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "nosotros-subtitulo nosotros-img"
-                            "nosotros-texto nosotros-img"
-                            "nosotros-media nosotros-img";
-}
-
-.nosotros-subtitulo{
-    grid-area: nosotros-subtitulo;
-}
-
-.nosotros-contenedor .nosotros-texto{
-    grid-area: nosotros-texto;
-}
-
-.nosotros-contenedor .nosotros-media{
-    grid-area: nosotros-media;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    align-items: center;
+    gap: 35px;
 }
 
-.nosotros-contenedor .nosotros-img{
-    grid-area: nosotros-img;
-    max-height: 100%;
-    margin-top: 40px;
+.nosotros-p-container{
+    width: 45%;
 }
 
-.nosotros-img img{
+.nosotros-img-container{
+    width: 45%;
+    
+}
+
+.nosotros-img-container img{
+    width: 480px;
+    height: 480px;
     border-radius: 5px;
     box-shadow: 0 0 8px 0 rgba(168, 161, 161, 0.5);
-}
-
-.nosotros-media .social-media-icon{
-    border: 1px solid black;
-    color: black;
-}
-
-.nosotros-media .social-media-icon:hover{
-background: black;
-color: darkslategray;
-border: 2px solid darkslategray;
+    object-fit: cover;
 }
 
 /*Actividades - servicios*/
@@ -451,60 +429,6 @@ h3{
     )
     ,url("media/card3.jpg");
 }
-
-
-/*Aniversario*/
-
-.aniversary{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    color: white;
-    background-image:linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("https://pbs.twimg.com/media/EVXZcqlXsAAuFfK?format=jpg&name=4096x4096");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.aniversary h3{
-    color: white;
-    margin-right: 900px;
-    margin-bottom: 20px;
-    font-size: 27px;
-}
-
-.aniversary p{
-    color: white;
-    margin-right: 900px;
-    font-size: 14px;
-}
-
-.aniversary .button-info{
-    font-size: 1.1em;
-    font-weight: lighter;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 1px solid white;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
-    color: white;
-    background-color: black;
-    cursor: pointer;
-    margin-right: 900px;
-    margin-top: 30px;
-}
-
-.aniversary .button-info:hover{
-    background-color: rgb(32, 29, 29);
-}
-
 
 /*galeria*/
 
@@ -620,48 +544,13 @@ h3{
     cursor: pointer;
 }
 
-/*Novedades*/
 
-.novedades-contenedor{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
-.novedades-foto{
-    width: 350px;
-    height: 600px;
-    text-align: center;
-    line-height: 30px;
-}
-
-.novedades-foto img{
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-.novedades-texto{
-    width: 340px;
-    height: 600px;
-    text-align: center;
-    line-height: 30px;
-}
-
-.novedades-texto h2{
-    margin-top: 35px;
-    margin-bottom: 40px;
-}
 
 /*Footer*/
 
 footer{
     background: black;
-    padding-bottom: 0.1px;
+   /* padding-bottom: 0.1px;*/
 }
 
 .footer-content{
@@ -669,8 +558,8 @@ footer{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 40px;
+    /*padding-top: 60px;
+    padding-bottom: 40px;*/
 }
 
 .contact-us{
@@ -716,7 +605,7 @@ footer{
     margin: auto;
     height: 2px;
     background: white;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
 }
 
 /*Footer: links y contacto*/
@@ -725,28 +614,9 @@ footer{
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    height: 35vh;
-    padding-bottom: 30px;
-}
-
-.links a{
-    text-decoration: none;
-    color: white;
-}
-
-.links a:hover{
-    color: darkslategray;
-}
-
-.footer-contact a{
-    padding-bottom: 47px;
-    text-decoration: none;
-    color: white;
-}
-
-.footer-contact a:hover{
-    color: darkslategray;
+    justify-content: center;
+   margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .links-contacto .number{
@@ -756,57 +626,7 @@ footer{
     height: 14px;
 }
 
-/*Footer: contacto*/
-/*
-.contact{
-    background: black;
-    color: white;
-}
 
-.form{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.input{
-    background: transparent;
-    border: 0;
-    color: white;
-    outline: none;
-    border: 1px solid white;
-    padding: 20px 10px;
-}
-
-.input::placeholder{
-    color: white;
-    font-family: 'raleway', 'sans-serif';
-}
-
-input[type="text"],
-input[type="email"]{
-    display: inline-block;
-    width: 49%;
-    margin-bottom: 30px;
-}
-
-.form textarea{
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-input[type="submit"]{
-    width: 120px;
-    text-align: center;
-    padding: 14px 0;
-}
-
-input[type="submit"]:hover{
-    cursor: pointer;
-    color: darkslategray;
-    background: white;
-}
-*/
 
 /*Medias seccion actividades y servicios*/
 
@@ -834,17 +654,17 @@ input[type="submit"]:hover{
 /* Medias generales*/
 
 @media screen and (max-width:800px){
+
     .menu-navegacion{
         width: 50vw;
     }
 
-    .titulo{
-        font-size: 40px;
+    .video{
+        width: 90%;
     }
 
-    .contenedor-nosotros img{
-        width: 80%;
-        margin-bottom: 40px;
+    .titulo{
+        font-size: 40px;
     }
 
     .checklist-nosotros{
@@ -883,7 +703,7 @@ input[type="submit"]:hover{
     .contact-us{
         text-align: center;
         width: 80%;
-        margin-bottom: 40%;
+        margin-bottom: 20%;
     }
 }
 
@@ -920,5 +740,11 @@ input[type="submit"]:hover{
     .contact-us{
         width: 90%;
     }
+
+    .nosotros-contenedor{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 
